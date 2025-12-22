@@ -17,7 +17,7 @@ This package provides the URDF model, MuJoCo (MJCF) models, and meshes for the W
 If you only want to view the model in MuJoCo, you don't need to build the ROS package. Just ensure you have the `mujoco` python package installed.
 
 ```
-git clone https://github.com/Wuji-Technology-Co-Ltd/wuji_hand_description.git
+git clone https://github.com/wuji-technology/wuji_hand_description.git
 
 pip install mujoco
 ```
@@ -44,7 +44,7 @@ Navigate to the `src` directory of your ROS 2 workspace(for example, `~/ros2_ws/
 
 ```
 cd ~/ros2_ws/src
-git clone https://github.com/Wuji-Technology-Co-Ltd/wuji_hand_description.git
+git clone https://github.com/wuji-technology/wuji_hand_description.git
 ```
 
 ### 2.2 Install Dependencies
