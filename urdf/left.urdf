@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot
-  name="wujihand-left-v1.0.2">
+  name="wujihand-left">
   <mujoco>
     <compiler meshdir="../meshes/left" balanceinertia="true" discardvisual="false" eulerseq="xyz" autolimits="true" />
   </mujoco>
