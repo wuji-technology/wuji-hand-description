@@ -554,7 +554,7 @@
     <child
       link="left_finger3_link2" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
     <limit
       lower="-0.3977"
       upper="0.3115"
@@ -774,7 +774,7 @@
     <child
       link="left_finger4_link2" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
     <limit
       lower="-0.4101"
       upper="0.3014"
