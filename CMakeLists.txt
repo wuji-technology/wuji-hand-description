@@ -4,7 +4,7 @@ project(wuji_hand_description)
 find_package(ament_cmake REQUIRED)
 
 install(
-    DIRECTORY launch meshes rviz urdf mjcf
+    DIRECTORY launch meshes rviz urdf
     DESTINATION share/${PROJECT_NAME}
 )
 

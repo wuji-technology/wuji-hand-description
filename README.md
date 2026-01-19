@@ -1,6 +1,7 @@
 # wuji-hand-description
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/wuji-technology/wuji-hand-description)](https://github.com/wuji-technology/wuji-hand-description/releases)
 
 Robot model description package for Wuji Hand. Provides URDF models, MuJoCo (MJCF) models, and high-quality meshes for simulation and visualization. Includes configuration files for ROS2 visualization (RViz).
 
