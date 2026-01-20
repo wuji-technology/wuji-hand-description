@@ -1,4 +1,4 @@
-<mujoco model="wujihand-right-v1.0.2">
+<mujoco model="wujihand-left">
   <compiler angle="radian" meshdir="../meshes/left/" />
 
 
