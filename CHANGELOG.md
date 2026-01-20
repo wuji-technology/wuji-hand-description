@@ -9,8 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix robot name in left hand models (was incorrectly set to "wujihand-right")
-- Remove version suffix from robot name in all model files
+- Fix robot name in left-hand models (was incorrectly set to "wujihand-right-v1.0.2")
 - Fix inertia values
 - Fix joint motion range limits
 - Fix joint torque limits
