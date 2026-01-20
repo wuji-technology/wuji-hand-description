@@ -176,7 +176,7 @@
       </body>
     </body>
   </worldbody>
-    <actuator>
+  <actuator>
     <position name="right_finger1_joint1_actuator" joint="right_finger1_joint1" kp="0.5" ctrlrange="0.0368 1.6125" forcerange="-0.4452 0.4452" />
     <position name="right_finger1_joint2_actuator" joint="right_finger1_joint2" kp="0.5" ctrlrange="-0.1576 0.9312" forcerange="-0.4259 0.4259" />
     <position name="right_finger1_joint3_actuator" joint="right_finger1_joint3" kp="0.5" ctrlrange="-0.4638 1.5607" forcerange="-0.1888 0.1888" />
