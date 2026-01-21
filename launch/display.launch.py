@@ -35,7 +35,7 @@ def launch_setup(context):
         executable="rviz2",
         name="rviz2",
         output="screen",
-        arguments=["-d", os.path.join(pkg_path, "rviz", "robot_display.rviz")],
+        arguments=["-d", os.path.join(pkg_path, "rviz", f"{hand}.rviz")],
     )
 
     return [

@@ -103,16 +103,16 @@ source install/setup.bash
 
 These commands will launch robot_state_publisher, joint_state_publisher_gui, and RViz.
 
+Visualize Left Hand (default)
+
+```
+ros2 launch wuji_hand_description display.launch.py
+```
+
 Visualize Right Hand
 
 ```
-ros2 launch wuji_hand_description display.right.py
-```
-
-Visualize Left Hand
-
-```
-ros2 launch wuji_hand_description display.left.py
+ros2 launch wuji_hand_description display.launch.py hand:=right
 ```
 
 ## Contact
