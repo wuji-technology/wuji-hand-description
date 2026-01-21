@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>wuji_hand_description</name>
-  <version>1.0.2</version>
+  <version>0.2.1</version>
   <description>Wujihand description package containing URDF files and launch configurations</description>
   
   <maintainer email="support@wuji.tech">Wuji Technology</maintainer>
