@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix joint motion range limits
 - Fix joint torque limits
 - Fix self-collision groups
+- Fix RViz fixed frame for right hand visualization
 
 ## [0.2.0] - 2026-01-19
 
