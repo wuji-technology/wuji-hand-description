@@ -56,57 +56,109 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        finger1_link1:
+        left_palm_link:
           Value: true
-        finger1_link2:
+        left_finger1_link1:
           Value: true
-        finger1_link3:
+        left_finger1_link2:
           Value: true
-        finger1_link4:
+        left_finger1_link3:
           Value: true
-        finger1_tip_link:
+        left_finger1_link4:
           Value: true
-        finger2_link1:
+        left_finger1_tip_link:
           Value: true
-        finger2_link2:
+        left_finger2_link1:
           Value: true
-        finger2_link3:
+        left_finger2_link2:
           Value: true
-        finger2_link4:
+        left_finger2_link3:
           Value: true
-        finger2_tip_link:
+        left_finger2_link4:
           Value: true
-        finger3_link1:
+        left_finger2_tip_link:
           Value: true
-        finger3_link2:
+        left_finger3_link1:
           Value: true
-        finger3_link3:
+        left_finger3_link2:
           Value: true
-        finger3_link4:
+        left_finger3_link3:
           Value: true
-        finger3_tip_link:
+        left_finger3_link4:
           Value: true
-        finger4_link1:
+        left_finger3_tip_link:
           Value: true
-        finger4_link2:
+        left_finger4_link1:
           Value: true
-        finger4_link3:
+        left_finger4_link2:
           Value: true
-        finger4_link4:
+        left_finger4_link3:
           Value: true
-        finger4_tip_link:
+        left_finger4_link4:
           Value: true
-        finger5_link1:
+        left_finger4_tip_link:
           Value: true
-        finger5_link2:
+        left_finger5_link1:
           Value: true
-        finger5_link3:
+        left_finger5_link2:
           Value: true
-        finger5_link4:
+        left_finger5_link3:
           Value: true
-        finger5_tip_link:
+        left_finger5_link4:
           Value: true
-        palm_link:
+        left_finger5_tip_link:
+          Value: true
+        right_palm_link:
+          Value: true
+        right_finger1_link1:
+          Value: true
+        right_finger1_link2:
+          Value: true
+        right_finger1_link3:
+          Value: true
+        right_finger1_link4:
+          Value: true
+        right_finger1_tip_link:
+          Value: true
+        right_finger2_link1:
+          Value: true
+        right_finger2_link2:
+          Value: true
+        right_finger2_link3:
+          Value: true
+        right_finger2_link4:
+          Value: true
+        right_finger2_tip_link:
+          Value: true
+        right_finger3_link1:
+          Value: true
+        right_finger3_link2:
+          Value: true
+        right_finger3_link3:
+          Value: true
+        right_finger3_link4:
+          Value: true
+        right_finger3_tip_link:
+          Value: true
+        right_finger4_link1:
+          Value: true
+        right_finger4_link2:
+          Value: true
+        right_finger4_link3:
+          Value: true
+        right_finger4_link4:
+          Value: true
+        right_finger4_tip_link:
+          Value: true
+        right_finger5_link1:
+          Value: true
+        right_finger5_link2:
+          Value: true
+        right_finger5_link3:
+          Value: true
+        right_finger5_link4:
+          Value: true
+        right_finger5_tip_link:
           Value: true
       Marker Scale: 0.10000000149011612
       Name: TF
@@ -114,36 +166,67 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        palm_link:
-          finger1_link1:
-            finger1_link2:
-              finger1_link3:
-                finger1_link4:
-                  finger1_tip_link:
+        left_palm_link:
+          left_finger1_link1:
+            left_finger1_link2:
+              left_finger1_link3:
+                left_finger1_link4:
+                  left_finger1_tip_link:
                     {}
-          finger2_link1:
-            finger2_link2:
-              finger2_link3:
-                finger2_link4:
-                  finger2_tip_link:
+          left_finger2_link1:
+            left_finger2_link2:
+              left_finger2_link3:
+                left_finger2_link4:
+                  left_finger2_tip_link:
                     {}
-          finger3_link1:
-            finger3_link2:
-              finger3_link3:
-                finger3_link4:
-                  finger3_tip_link:
+          left_finger3_link1:
+            left_finger3_link2:
+              left_finger3_link3:
+                left_finger3_link4:
+                  left_finger3_tip_link:
                     {}
-          finger4_link1:
-            finger4_link2:
-              finger4_link3:
-                finger4_link4:
-                  finger4_tip_link:
+          left_finger4_link1:
+            left_finger4_link2:
+              left_finger4_link3:
+                left_finger4_link4:
+                  left_finger4_tip_link:
                     {}
-          finger5_link1:
-            finger5_link2:
-              finger5_link3:
-                finger5_link4:
-                  finger5_tip_link:
+          left_finger5_link1:
+            left_finger5_link2:
+              left_finger5_link3:
+                left_finger5_link4:
+                  left_finger5_tip_link:
+                    {}
+        right_palm_link:
+          right_finger1_link1:
+            right_finger1_link2:
+              right_finger1_link3:
+                right_finger1_link4:
+                  right_finger1_tip_link:
+                    {}
+          right_finger2_link1:
+            right_finger2_link2:
+              right_finger2_link3:
+                right_finger2_link4:
+                  right_finger2_tip_link:
+                    {}
+          right_finger3_link1:
+            right_finger3_link2:
+              right_finger3_link3:
+                right_finger3_link4:
+                  right_finger3_tip_link:
+                    {}
+          right_finger4_link1:
+            right_finger4_link2:
+              right_finger4_link3:
+                right_finger4_link4:
+                  right_finger4_tip_link:
+                    {}
+          right_finger5_link1:
+            right_finger5_link2:
+              right_finger5_link3:
+                right_finger5_link4:
+                  right_finger5_tip_link:
                     {}
       Update Interval: 0
       Value: true
@@ -165,132 +248,262 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        finger1_link1:
+        left_palm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger1_link2:
+        left_finger1_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger1_link3:
+        left_finger1_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger1_link4:
+        left_finger1_link3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger1_tip_link:
+        left_finger1_link4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger2_link1:
+        left_finger1_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger2_link2:
+        left_finger2_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger2_link3:
+        left_finger2_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger2_link4:
+        left_finger2_link3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger2_tip_link:
+        left_finger2_link4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger3_link1:
+        left_finger2_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger3_link2:
+        left_finger3_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger3_link3:
+        left_finger3_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger3_link4:
+        left_finger3_link3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger3_tip_link:
+        left_finger3_link4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger4_link1:
+        left_finger3_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger4_link2:
+        left_finger4_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger4_link3:
+        left_finger4_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger4_link4:
+        left_finger4_link3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger4_tip_link:
+        left_finger4_link4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger5_link1:
+        left_finger4_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger5_link2:
+        left_finger5_link1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger5_link3:
+        left_finger5_link2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger5_link4:
+        left_finger5_link3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        finger5_tip_link:
+        left_finger5_link4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        palm_link:
+        left_finger5_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_palm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger5_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger5_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger5_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger5_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger5_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -306,7 +519,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: palm_link
+    Fixed Frame: left_palm_link
     Frame Rate: 30
   Name: root
   Tools:
