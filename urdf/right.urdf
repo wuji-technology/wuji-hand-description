@@ -13,7 +13,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_palm_link.STL" />
+          filename="../meshes/right/right_palm_link.STL" />
       </geometry>
       <material
         name="">
@@ -27,7 +27,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_palm_link.STL" />
+          filename="../meshes/right/right_palm_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link1.STL" />
+          filename="../meshes/right/right_finger1_link1.STL" />
       </geometry>
       <material
         name="">
@@ -54,7 +54,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link1.STL" />
+          filename="../meshes/right/right_finger1_link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -85,7 +85,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link2.STL" />
+          filename="../meshes/right/right_finger1_link2.STL" />
       </geometry>
       <material
         name="">
@@ -99,7 +99,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link2.STL" />
+          filename="../meshes/right/right_finger1_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -130,7 +130,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link3.STL" />
+          filename="../meshes/right/right_finger1_link3.STL" />
       </geometry>
       <material
         name="">
@@ -144,7 +144,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link3.STL" />
+          filename="../meshes/right/right_finger1_link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -175,7 +175,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link4.STL" />
+          filename="../meshes/right/right_finger1_link4.STL" />
       </geometry>
       <material
         name="">
@@ -189,7 +189,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_link4.STL" />
+          filename="../meshes/right/right_finger1_link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -220,7 +220,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_tip_link.STL" />
+          filename="../meshes/right/right_finger1_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -234,7 +234,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger1_tip_link.STL" />
+          filename="../meshes/right/right_finger1_tip_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -260,7 +260,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link1.STL" />
+          filename="../meshes/right/right_finger2_link1.STL" />
       </geometry>
       <material
         name="">
@@ -274,7 +274,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link1.STL" />
+          filename="../meshes/right/right_finger2_link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -305,7 +305,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link2.STL" />
+          filename="../meshes/right/right_finger2_link2.STL" />
       </geometry>
       <material
         name="">
@@ -319,7 +319,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link2.STL" />
+          filename="../meshes/right/right_finger2_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -350,7 +350,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link3.STL" />
+          filename="../meshes/right/right_finger2_link3.STL" />
       </geometry>
       <material
         name="">
@@ -364,7 +364,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link3.STL" />
+          filename="../meshes/right/right_finger2_link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -395,7 +395,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link4.STL" />
+          filename="../meshes/right/right_finger2_link4.STL" />
       </geometry>
       <material
         name="">
@@ -409,7 +409,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_link4.STL" />
+          filename="../meshes/right/right_finger2_link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -440,7 +440,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_tip_link.STL" />
+          filename="../meshes/right/right_finger2_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -454,7 +454,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger2_tip_link.STL" />
+          filename="../meshes/right/right_finger2_tip_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -480,7 +480,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link1.STL" />
+          filename="../meshes/right/right_finger3_link1.STL" />
       </geometry>
       <material
         name="">
@@ -494,7 +494,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link1.STL" />
+          filename="../meshes/right/right_finger3_link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -525,7 +525,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link2.STL" />
+          filename="../meshes/right/right_finger3_link2.STL" />
       </geometry>
       <material
         name="">
@@ -539,7 +539,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link2.STL" />
+          filename="../meshes/right/right_finger3_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -570,7 +570,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link3.STL" />
+          filename="../meshes/right/right_finger3_link3.STL" />
       </geometry>
       <material
         name="">
@@ -584,7 +584,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link3.STL" />
+          filename="../meshes/right/right_finger3_link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -615,7 +615,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link4.STL" />
+          filename="../meshes/right/right_finger3_link4.STL" />
       </geometry>
       <material
         name="">
@@ -629,7 +629,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_link4.STL" />
+          filename="../meshes/right/right_finger3_link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -660,7 +660,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_tip_link.STL" />
+          filename="../meshes/right/right_finger3_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -674,7 +674,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger3_tip_link.STL" />
+          filename="../meshes/right/right_finger3_tip_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -700,7 +700,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link1.STL" />
+          filename="../meshes/right/right_finger4_link1.STL" />
       </geometry>
       <material
         name="">
@@ -714,7 +714,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link1.STL" />
+          filename="../meshes/right/right_finger4_link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -745,7 +745,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link2.STL" />
+          filename="../meshes/right/right_finger4_link2.STL" />
       </geometry>
       <material
         name="">
@@ -759,7 +759,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link2.STL" />
+          filename="../meshes/right/right_finger4_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -790,7 +790,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link3.STL" />
+          filename="../meshes/right/right_finger4_link3.STL" />
       </geometry>
       <material
         name="">
@@ -804,7 +804,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link3.STL" />
+          filename="../meshes/right/right_finger4_link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -835,7 +835,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link4.STL" />
+          filename="../meshes/right/right_finger4_link4.STL" />
       </geometry>
       <material
         name="">
@@ -849,7 +849,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_link4.STL" />
+          filename="../meshes/right/right_finger4_link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -880,7 +880,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_tip_link.STL" />
+          filename="../meshes/right/right_finger4_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -894,7 +894,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger4_tip_link.STL" />
+          filename="../meshes/right/right_finger4_tip_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -920,7 +920,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link1.STL" />
+          filename="../meshes/right/right_finger5_link1.STL" />
       </geometry>
       <material
         name="">
@@ -934,7 +934,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link1.STL" />
+          filename="../meshes/right/right_finger5_link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -965,7 +965,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link2.STL" />
+          filename="../meshes/right/right_finger5_link2.STL" />
       </geometry>
       <material
         name="">
@@ -979,7 +979,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link2.STL" />
+          filename="../meshes/right/right_finger5_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1010,7 +1010,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link3.STL" />
+          filename="../meshes/right/right_finger5_link3.STL" />
       </geometry>
       <material
         name="">
@@ -1024,7 +1024,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link3.STL" />
+          filename="../meshes/right/right_finger5_link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -1055,7 +1055,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link4.STL" />
+          filename="../meshes/right/right_finger5_link4.STL" />
       </geometry>
       <material
         name="">
@@ -1069,7 +1069,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_link4.STL" />
+          filename="../meshes/right/right_finger5_link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -1100,7 +1100,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_tip_link.STL" />
+          filename="../meshes/right/right_finger5_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -1114,7 +1114,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="right_finger5_tip_link.STL" />
+          filename="../meshes/right/right_finger5_tip_link.STL" />
       </geometry>
     </collision>
   </link>
