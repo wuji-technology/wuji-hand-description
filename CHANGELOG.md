@@ -9,9 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix mesh file paths in URDF files (use relative path `../meshes/` instead of filename only)
 
-## [0.2.1] - 2026-01-20
+## [0.2.1] - 2026-01-30
 
 ### Fixed
 
@@ -21,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix joint torque limits
 - Fix self-collision groups
 - Fix RViz fixed frame for right hand visualization
+- Fix mesh file paths in URDF files (use relative path `../meshes/` instead of filename only)
 
 ## [0.2.0] - 2026-01-19
 
