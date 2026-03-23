@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/wuji-technology/wuji-hand-description)](https://github.com/wuji-technology/wuji-hand-description/releases)
 
-Robot model description package for Wuji Hand. Provides URDF models, MuJoCo (MJCF) models, and high-quality meshes for simulation and visualization. Includes configuration files for ROS2 visualization (RViz).
+Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and USD (Isaac Sim) models with high-quality meshes for simulation and visualization. Includes configuration files for ROS2 visualization (RViz).
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@ Robot model description package for Wuji Hand. Provides URDF models, MuJoCo (MJC
 - [Usage](#usage)
   - [1. MuJoCo Usage](#1-mujoco-usage)
   - [2. ROS2 and RViz Usage](#2-ros2-and-rviz-usage)
+  - [3. Isaac Sim (USD) Usage](#3-isaac-sim-usd-usage)
 - [Contact](#contact)
 
 ## Repository Structure
@@ -25,6 +26,15 @@ Robot model description package for Wuji Hand. Provides URDF models, MuJoCo (MJC
 │   └── right.xml
 ├── rviz/
 │   └── ...
+├── usd/
+│   ├── left/
+│   │   ├── configuration/
+│   │   ├── textures/
+│   │   └── wujihand.usd
+│   └── right/
+│       ├── configuration/
+│       ├── textures/
+│       └── wujihand.usd
 ├── urdf/
 │   ├── left.urdf
 │   ├── right.urdf
@@ -39,6 +49,7 @@ Robot model description package for Wuji Hand. Provides URDF models, MuJoCo (MJC
 
 | Directory | Description |
 |-----------|-------------|
+| `usd/` | USD assets for NVIDIA Isaac Sim with fused meshes, PBR materials, physics, and collision filter pairs. |
 | `urdf/` | Contains URDF files for Left and Right hands. `left.urdf`/`right.urdf` use relative paths for local tools; `left-ros.urdf`/`right-ros.urdf` use absolute package paths for RViz and Launch files. |
 | `mjcf/` | Contains MuJoCo XML model files (`left.xml`, `right.xml`) for simulation. |
 | `meshes/` | High-quality STL files for visualization and collision. |
@@ -114,6 +125,13 @@ Visualize Right Hand
 ```
 ros2 launch wuji_hand_description display.launch.py hand:=right
 ```
+
+### 3. Isaac Sim (USD) Usage
+
+The `usd/` directory contains pre-built USD assets for NVIDIA Isaac Sim, with PBR materials (black glove + WUJI logo), physics properties, and collision filter pairs baked in. You can load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
+
+For a complete Isaac Sim simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
+
 
 ## Contact
 
