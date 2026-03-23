@@ -78,7 +78,7 @@
       <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="right_finger2_link1" contype="0" conaffinity="0" />
       <body name="right_finger2_link2" pos="0.0022 0 0.004">
         <inertial pos="-0.0061577 -4.1189e-07 0.020911" quat="0.70703 0.0104245 0.0104245 0.70703" mass="0.033" diaginertia="6.34e-06 6.31472e-06 8.85281e-07" />
-        <joint name="right_finger2_joint2" pos="0 0 0" axis="-1 0 0" range="-0.4044 0.3054" actuatorfrcrange="-0.1822 0.1822" />
+        <joint name="right_finger2_joint2" pos="0 0 0" axis="-1 0 0" range="-0.292 0.409" actuatorfrcrange="-0.1822 0.1822" />
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.9 0.8 0.6 1" mesh="right_finger2_link2" />
         <geom type="mesh" rgba="0.9 0.8 0.6 1" mesh="right_finger2_link2" contype="2" conaffinity="2" />
         <body name="right_finger2_link3" pos="-0.0047503 0 0.043618" quat="1 0 0 -0.000134305">
@@ -182,7 +182,7 @@
     <position name="right_finger1_joint3_actuator" joint="right_finger1_joint3" kp="0.5" ctrlrange="-0.4638 1.5607" forcerange="-0.1888 0.1888" />
     <position name="right_finger1_joint4_actuator" joint="right_finger1_joint4" kp="0.5" ctrlrange="-0.4829 1.5451" forcerange="-0.1468 0.1468" />
     <position name="right_finger2_joint1_actuator" joint="right_finger2_joint1" kp="0.5" ctrlrange="-0.1611 1.5588" forcerange="-0.6188 0.6188" />
-    <position name="right_finger2_joint2_actuator" joint="right_finger2_joint2" kp="0.5" ctrlrange="-0.4044 0.3054" forcerange="-0.1822 0.1822" />
+    <position name="right_finger2_joint2_actuator" joint="right_finger2_joint2" kp="0.5" ctrlrange="-0.292 0.409" forcerange="-0.1822 0.1822" />
     <position name="right_finger2_joint3_actuator" joint="right_finger2_joint3" kp="0.5" ctrlrange="-0.4714 1.5504" forcerange="-0.2251 0.2251" />
     <position name="right_finger2_joint4_actuator" joint="right_finger2_joint4" kp="0.5" ctrlrange="-0.4644 1.5753" forcerange="-0.217 0.217" />
     <position name="right_finger3_joint1_actuator" joint="right_finger3_joint1" kp="0.5" ctrlrange="-0.1719 1.5496" forcerange="-0.6494 0.6494" />
