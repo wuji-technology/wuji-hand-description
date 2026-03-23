@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- USD model files for NVIDIA Isaac Sim (`usd/left/`, `usd/right/`) with fused meshes, PBR materials (black glove + WUJI logo), physics properties, and collision filter pairs baked in
+- Update README with USD directory structure and Isaac Sim usage section
+
 ## [0.2.2] - 2026-02-02
 
 ### Fixed
