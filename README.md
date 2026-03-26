@@ -1,138 +1,90 @@
 # wuji-hand-description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/wuji-technology/wuji-hand-description)](https://github.com/wuji-technology/wuji-hand-description/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/wuji-technology/wuji-hand-description)](https://github.com/wuji-technology/wuji-hand-description/releases)
 
-Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and USD (Isaac Sim) models with high-quality meshes for simulation and visualization. Includes configuration files for ROS2 visualization (RViz).
+Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and USD assets for simulation and visualization. Includes ROS2 launch and RViz configuration files for quick inspection of left and right hand models.
 
 ## Table of Contents
 
 - [Repository Structure](#repository-structure)
 - [Usage](#usage)
-  - [1. MuJoCo Usage](#1-mujoco-usage)
-  - [2. ROS2 and RViz Usage](#2-ros2-and-rviz-usage)
-  - [3. Isaac Sim (USD) Usage](#3-isaac-sim-usd-usage)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running](#running)
+  - [Output](#output)
 - [Contact](#contact)
 
 ## Repository Structure
 
 ```text
-├── launch/
-│   └── ...
-├── meshes/
-│   └── ...
-├── mjcf/
-│   ├── left.xml
-│   └── right.xml
-├── rviz/
-│   └── ...
-├── usd/
-│   ├── left/
-│   │   ├── configuration/
-│   │   ├── textures/
-│   │   └── wujihand.usd
-│   └── right/
-│       ├── configuration/
-│       ├── textures/
-│       └── wujihand.usd
-├── urdf/
-│   ├── left.urdf
-│   ├── right.urdf
-│   ├── left-ros.urdf
-│   └── right-ros.urdf
-├── CMakeLists.txt
-├── package.xml
+├── launch/              // ROS2 launch files for model visualization
+├── meshes/              // STL meshes for visual and collision geometry
+├── mjcf/                // MuJoCo XML models for left and right hands
+├── rviz/                // RViz presets for left and right hands
+├── step/                // STEP source files for CAD exchange
+├── usd/                 // Isaac Sim USD assets for left and right hands
+├── urdf/                // URDF models for local tools and ROS2
+├── CMakeLists.txt       // ROS2 package installation rules
+├── package.xml          // ROS2 package manifest
 └── README.md
 ```
 
-### Directory Description
-
-| Directory | Description |
-|-----------|-------------|
-| `usd/` | USD assets for NVIDIA Isaac Sim with fused meshes, PBR materials, physics, and collision filter pairs. |
-| `urdf/` | Contains URDF files for Left and Right hands. `left.urdf`/`right.urdf` use relative paths for local tools; `left-ros.urdf`/`right-ros.urdf` use absolute package paths for RViz and Launch files. |
-| `mjcf/` | Contains MuJoCo XML model files (`left.xml`, `right.xml`) for simulation. |
-| `meshes/` | High-quality STL files for visualization and collision. |
-| `launch/` | Python launch scripts to visualize the model in RViz. |
-| `rviz/` | Default RViz configuration files. |
-
 ## Usage
 
-### 1. MuJoCo Usage
+### Prerequisites
 
-If you only want to view the model in MuJoCo, you don't need to build the ROS package. Just ensure you have the `mujoco` python package installed.
+- Python 3 and the `mujoco` package for MuJoCo viewing
+- ROS2 Humble or Rolling for RViz visualization
+- NVIDIA Isaac Sim for USD asset inspection
 
-```
-git clone https://github.com/wuji-technology/wuji_hand_description.git
+### Installation
 
+```bash
+git clone https://github.com/wuji-technology/wuji-hand-description.git
+cd wuji-hand-description
 pip install mujoco
 ```
 
-#### View Right Hand
+For ROS2 workspace usage:
 
-```
-python -m mujoco.viewer --mjcf=mjcf/right.xml
-```
-
-#### View Left Hand
-
-```
-python -m mujoco.viewer --mjcf=mjcf/left.xml
-```
-
-### 2. ROS2 and RViz Usage
-
-If you want to use this robot in ROS 2 (Humble/Rolling) with RViz visualization, follow these steps. The launch files automatically use the ROS-compatible URDFs (*-ros.urdf).
-
-#### 2.1 Clone into Workspace
-
-Navigate to the `src` directory of your ROS 2 workspace(for example, `~/ros2_ws/src`):
-
-```
+```bash
 cd ~/ros2_ws/src
-git clone https://github.com/wuji-technology/wuji_hand_description.git
-```
-
-#### 2.2 Install Dependencies
-
-Install required ROS 2 dependencies (e.g., joint_state_publisher_gui):
-
-```
+git clone https://github.com/wuji-technology/wuji-hand-description.git
+cd ..
 rosdep install --from-paths src --ignore-src -r -y
-```
-
-#### 2.3 Build the Package and Source the Environment
-
-Compile the package using colcon. Note that the package name uses underscores (_).
-
-```
 colcon build --packages-select wuji_hand_description
 source install/setup.bash
 ```
 
-#### 2.4 RViz Visualization
+### Running
 
-These commands will launch robot_state_publisher, joint_state_publisher_gui, and RViz.
+#### MuJoCo
 
-Visualize Left Hand (default)
-
+```bash
+python -m mujoco.viewer --mjcf=mjcf/right.xml
+python -m mujoco.viewer --mjcf=mjcf/left.xml
 ```
+
+#### ROS2 and RViz
+
+```bash
 ros2 launch wuji_hand_description display.launch.py
-```
-
-Visualize Right Hand
-
-```
 ros2 launch wuji_hand_description display.launch.py hand:=right
 ```
 
-### 3. Isaac Sim (USD) Usage
+#### Isaac Sim (USD)
 
-The `usd/` directory contains pre-built USD assets for NVIDIA Isaac Sim, with PBR materials (black glove + WUJI logo), physics properties, and collision filter pairs baked in. You can load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
+Load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
+For a complete simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
 
-For a complete Isaac Sim simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
+### Output
 
+```text
+- MuJoCo loads the left or right hand model for interactive inspection.
+- ROS2 launches robot_state_publisher, joint_state_publisher_gui, and RViz.
+- Isaac Sim opens the prebuilt USD asset with materials, physics, and collision filters.
+```
 
 ## Contact
 
-For any questions, please contact [support@wuji.tech](mailto:support@wuji.tech).
+For any questions, please contact support@wuji.tech.
