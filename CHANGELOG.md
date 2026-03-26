@@ -11,52 +11,69 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- USD model files for NVIDIA Isaac Sim (`usd/left/`, `usd/right/`) with fused meshes, PBR materials (black glove + WUJI logo), physics properties, and collision filter pairs baked in
-- Update README with USD directory structure and Isaac Sim usage section
+- Added USD assets for NVIDIA Isaac Sim with fused meshes, PBR materials, physics properties, and collision filter pairs.
+- Added README guidance for loading the USD assets in Isaac Sim.
+- Added an MIT license file for the public repository.
+
+### Changed
+
+- Standardized the MCP2 joint limits of the four non-thumb fingers to `-0.37` to `0.37` across the URDF, MJCF, and USD models.
+- Refreshed the README structure and usage examples to match the current repository contents.
+
+### Fixed
+
+- Corrected repository metadata and package links for the current `wuji-hand-description` repository.
+- Corrected package version metadata for the `0.2.4` release.
+
+## [0.2.3] - 2026-03-19
+
+### Fixed
+
+- Standardized left and right hand joint limits using averaged calibrated values across the hand models.
 
 ## [0.2.2] - 2026-02-02
 
 ### Fixed
 
-- Fix mesh file paths in URDF files (use relative path `../meshes/right/` or `../meshes/left/` respectively instead of filename only)
+- Fixed mesh references in the URDF models so left and right hand assets load correctly in local tools.
 
 ## [0.2.1] - 2026-01-20
 
 ### Fixed
 
-- Fix robot name in left-hand models (was incorrectly set to "wujihand-right-v1.0.2")
-- Fix inertia values
-- Fix joint motion range limits
-- Fix joint torque limits
-- Fix self-collision groups
-- Fix RViz fixed frame for right hand visualization
+- Fixed the robot name in the left-hand models.
+- Fixed inertia values.
+- Fixed joint motion range limits.
+- Fixed joint torque limits.
+- Fixed self-collision groups.
+- Fixed the RViz fixed frame for right hand visualization.
 
 ## [0.2.0] - 2026-01-19
 
 ### Changed
 
-- Remove version suffix from robot name (e.g., `wujihand-left-v1.0.2` → `wujihand-left`)
-- Merge separate `display.left.py` and `display.right.py` into unified `display.launch.py` with `hand` parameter
-- Exclude `mjcf/` directory from ROS2 installation
+- Removed the version suffix from the robot name.
+- Unified the left and right hand ROS2 visualization entry points behind a single launch interface with a `hand` selector.
+- Streamlined the ROS2 package installation layout for visualization workflows.
 
 ### Fixed
 
-- RViz config uses relative topic path `robot_description` instead of absolute `/robot_description`
-- This allows RViz running in a ROS2 namespace to correctly subscribe to the robot_description topic
+- Fixed the RViz robot description topic handling so visualization works correctly inside a ROS2 namespace.
 
 ## [0.1.0] - 2025-11-27
 
 ### Added
 
-- URDF models for Wuji Hand left and right hands
-- MJCF (MuJoCo XML) models for simulation
-- High-quality STL mesh files for visualization and collision
-- ROS2 launch files for left and right hands
-- RViz configuration file for robot display
-- CMakeLists.txt for ROS2 package build
+- Added URDF models for Wuji Hand left and right hands.
+- Added MJCF models for MuJoCo simulation.
+- Added high-quality STL meshes for visualization and collision.
+- Added ROS2 launch files for left and right hands.
+- Added RViz configuration files for robot display.
+- Added ROS2 package build configuration.
 
 [Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.4...HEAD
-[0.2.4]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.2...v0.2.4
+[0.2.4]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.3...v0.2.4
+[0.2.3]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.1.0...v0.2.0
