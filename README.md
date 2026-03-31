@@ -50,13 +50,20 @@ python -m mujoco.viewer --mjcf=mjcf/left.xml
 # Source ROS2 environment, replace <distro> with your installed ROS2 distribution
 source /opt/ros/<distro>/setup.bash
 
+# If not cloned in this workspace yet:
 cd ~/ros2_ws/src
 git clone https://github.com/wuji-technology/wuji-hand-description.git
 cd ..
+
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --packages-select wuji_hand_description
 source install/setup.bash
+
+# Left hand (default)
 ros2 launch wuji_hand_description display.launch.py
+
+# Right hand
+ros2 launch wuji_hand_description display.launch.py hand:=right
 ```
 
 #### Isaac Sim (USD)
