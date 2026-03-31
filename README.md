@@ -4,15 +4,7 @@
 
 Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and USD assets for simulation and visualization. Includes ROS2 launch and RViz configuration files for quick inspection of left and right hand models.
 
-## Table of Contents
-
-- [Repository Structure](#repository-structure)
-- [Usage](#usage)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running](#running)
-  - [Output](#output)
-- [Contact](#contact)
+**Get started with [Quick Start](#quick-start). For detailed documentation, refer to [Wuji Hand Description Guide](https://docs.wuji.tech/docs/en/wuji-hand/latest/wuji-hand-description-guide/) on Wuji Docs Center.**
 
 ## Repository Structure
 
@@ -29,31 +21,12 @@ Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and
 └── README.md
 ```
 
-## Usage
-
-### Prerequisites
-
-- Python 3 and the `mujoco` package for MuJoCo viewing
-- ROS2 Humble or Rolling for RViz visualization
-- NVIDIA Isaac Sim for USD asset inspection
+## Quick Start
 
 ### Installation
 
 ```bash
 git clone https://github.com/wuji-technology/wuji-hand-description.git
-cd wuji-hand-description
-pip install mujoco
-```
-
-For ROS2 workspace usage:
-
-```bash
-cd ~/ros2_ws/src
-git clone https://github.com/wuji-technology/wuji-hand-description.git
-cd ..
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --packages-select wuji_hand_description
-source install/setup.bash
 ```
 
 ### Running
@@ -61,14 +34,35 @@ source install/setup.bash
 #### MuJoCo
 
 ```bash
+# Navigate to the repository directory
+cd wuji-hand-description
+
+# Right hand
 python -m mujoco.viewer --mjcf=mjcf/right.xml
+
+# Left hand
 python -m mujoco.viewer --mjcf=mjcf/left.xml
 ```
 
 #### ROS2 and RViz
 
 ```bash
+# Source ROS2 environment, replace <distro> with your installed ROS2 distribution
+source /opt/ros/<distro>/setup.bash
+
+# If not cloned in this workspace yet:
+cd ~/ros2_ws/src
+git clone https://github.com/wuji-technology/wuji-hand-description.git
+cd ..
+
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --packages-select wuji_hand_description
+source install/setup.bash
+
+# Left hand (default)
 ros2 launch wuji_hand_description display.launch.py
+
+# Right hand
 ros2 launch wuji_hand_description display.launch.py hand:=right
 ```
 
@@ -77,14 +71,6 @@ ros2 launch wuji_hand_description display.launch.py hand:=right
 Load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
 For a complete simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
 
-### Output
-
-```text
-- MuJoCo loads the left or right hand model for interactive inspection.
-- ROS2 launches robot_state_publisher, joint_state_publisher_gui, and RViz.
-- Isaac Sim opens the prebuilt USD asset with materials, physics, and collision filters.
-```
-
 ## Contact
 
-For any questions, please contact support@wuji.tech.
+For any questions, please contact [support@wuji.tech](mailto:support@wuji.tech).
