@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added docking module assets including URDF, MJCF, STL mesh, and USD files.
+
 ### Fixed
 
 - Replaced all URDF, MJCF, and mesh files with sysid-calibrated outputs from the `urdf_cali` pipeline, resolving left-right hand inconsistencies in joint axes, inertial origins, and kinematic parameters.

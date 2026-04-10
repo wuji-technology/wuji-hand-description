@@ -9,6 +9,7 @@ Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and
 ## Repository Structure
 
 ```text
+├── docking/             // Docking module assets (URDF, MJCF, meshes, USD)
 ├── launch/              // ROS2 launch files for model visualization
 ├── meshes/              // STL meshes for visual and collision geometry
 ├── mjcf/                // MuJoCo XML models for left and right hands
