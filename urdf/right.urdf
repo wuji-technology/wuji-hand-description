@@ -250,11 +250,6 @@
       link="right_finger1_tip_link" />
     <axis
       xyz="0 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="100"
-      velocity="10" />
   </joint>
   <link
     name="right_finger2_link1">
@@ -475,11 +470,6 @@
       link="right_finger2_tip_link" />
     <axis
       xyz="0 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="100"
-      velocity="10" />
   </joint>
   <link
     name="right_finger3_link1">
@@ -700,11 +690,6 @@
       link="right_finger3_tip_link" />
     <axis
       xyz="0 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="100"
-      velocity="10" />
   </joint>
   <link
     name="right_finger4_link1">
@@ -925,11 +910,6 @@
       link="right_finger4_tip_link" />
     <axis
       xyz="0 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="100"
-      velocity="10" />
   </joint>
   <link
     name="right_finger5_link1">
@@ -1150,10 +1130,5 @@
       link="right_finger5_tip_link" />
     <axis
       xyz="0 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="100"
-      velocity="10" />
   </joint>
 </robot>
