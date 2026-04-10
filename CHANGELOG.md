@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Replaced all URDF, MJCF, and mesh files with sysid-calibrated outputs from the `urdf_cali` pipeline, resolving left-right hand inconsistencies in joint axes, inertial origins, and kinematic parameters.
+- Corrected joint axis directions produced by `fix_axis.py` to ensure consistent rotation conventions across left and right hands.
+- Updated per-joint actuator parameters (kp, kv, armature, forcerange) from system identification results.
+- Recalibrated joint limits (lower, upper, velocity, effort) from `joint_limit_stats.csv` and `torque_limit_urdf.csv`.
+- Updated inertial properties (mass, CoM, inertia tensor) from `pkg_model.csv`.
+- Regenerated ROS URDF variants (`left-ros.urdf`, `right-ros.urdf`) with `package://` mesh paths to match the calibrated non-ROS versions.
+- Synced STL mesh files from calibration pipeline output.
+
 ## [0.2.4] - 2026-03-23
 
 ### Added
