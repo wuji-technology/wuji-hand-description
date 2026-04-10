@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added docking module assets including URDF, MJCF, STL mesh, and USD files.
+
+### Fixed
+
+- Replaced all URDF, MJCF, and mesh files with sysid-calibrated outputs from the `urdf_cali` pipeline, resolving left-right hand inconsistencies in joint axes, inertial origins, and kinematic parameters.
+- Corrected joint axis directions produced by `fix_axis.py` to ensure consistent rotation conventions across left and right hands.
+- Updated per-joint actuator parameters (kp, kv, armature, forcerange) from system identification results.
+- Recalibrated joint limits (lower, upper, velocity, effort) from `joint_limit_stats.csv` and `torque_limit_urdf.csv`.
+- Updated inertial properties (mass, CoM, inertia tensor) from `pkg_model.csv`.
+- Regenerated ROS URDF variants (`left-ros.urdf`, `right-ros.urdf`) with `package://` mesh paths to match the calibrated non-ROS versions.
+- Synced STL mesh files from calibration pipeline output.
+- Removed spurious `<limit>` elements from the five `right_finger*_tip_fixed` joints in `urdf/right.urdf` and `urdf/right-ros.urdf`; fixed joints must not carry `<limit>`, and their presence was the sole source of the 25-line structural diff between the left and right URDFs.
+- Fixed wrong ROS package reference in `docking/urdf/docking-ros.urdf`: mesh paths now use `package://wuji_hand_description/docking/meshes/...` instead of the stale `package://wuji_description/robots/docking/meshes/...`, which would have failed to resolve after `colcon build`.
+
+### Changed
+
+- `CMakeLists.txt` now also installs the `mjcf/` and `usd/` directories so ROS consumers can load MuJoCo and Isaac Sim assets via `ament_index`.
+- README now documents how to preview the new docking module in MuJoCo and urdf-viz.
+
 ## [0.2.4] - 2026-03-23
 
 ### Added

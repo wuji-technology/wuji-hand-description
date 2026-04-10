@@ -9,6 +9,7 @@ Robot model description package for Wuji Hand. Provides URDF, MuJoCo (MJCF), and
 ## Repository Structure
 
 ```text
+├── docking/             // Docking module assets (URDF, MJCF, meshes, USD)
 ├── launch/              // ROS2 launch files for model visualization
 ├── meshes/              // STL meshes for visual and collision geometry
 ├── mjcf/                // MuJoCo XML models for left and right hands
@@ -70,6 +71,22 @@ ros2 launch wuji_hand_description display.launch.py hand:=right
 
 Load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
 For a complete simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
+
+#### Docking module
+
+The `docking/` directory ships a standalone docking link (URDF, MJCF, USD, STL)
+intended to be attached to the hand palm or to an arm flange via a fixed joint
+when composing a full robot description. It is not included in the default
+display launch files.
+
+```bash
+# MuJoCo preview of the docking link
+python -m mujoco.viewer --mjcf=docking/mjcf/docking.xml
+
+# URDF preview (non-ROS, relative mesh path)
+# e.g. with urdf-viz:
+urdf-viz docking/urdf/docking.urdf
+```
 
 ## Contact
 
