@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added named `<site>` elements at all ten fingertips in `mjcf/left.xml` and `mjcf/right.xml` (`left_finger1_tip` ~ `left_finger5_tip`, `right_finger1_tip` ~ `right_finger5_tip`) for inverse kinematics targets, fingertip pose queries, and touch sensor attachment. Sites are placed in `group="3"` and hidden by default.
+- Added a Fingertip sites section to the README with a Python `mujoco` snippet showing how to resolve a site by name and read its world-frame pose.
+
+### Fixed
+
+- Unified left/right hand joint `<limit>` lower/upper bounds across `urdf/left.urdf`, `urdf/right.urdf`, `urdf/left-ros.urdf`, and `urdf/right-ros.urdf` by taking the averaged calibrated values, eliminating residual left/right asymmetry left over from the sysid calibration output.
+- Restored the four non-thumb MCP2 joints to the standard `-0.37` / `0.37` range in the same URDF files after the calibration pipeline had widened them slightly, keeping behavior consistent with `v0.2.4`.
+
 ## [0.2.5] - 2026-04-10
 
 ### Added

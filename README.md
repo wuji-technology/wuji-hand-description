@@ -72,6 +72,31 @@ ros2 launch wuji_hand_description display.launch.py hand:=right
 Load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
 For a complete simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
 
+#### Fingertip sites (MJCF)
+
+`mjcf/left.xml` and `mjcf/right.xml` expose ten named `<site>` elements — one per
+fingertip — for inverse kinematics targets, fingertip pose queries, and touch
+sensor attachment. Names follow the pattern `{left,right}_finger{1..5}_tip`
+(for example `left_finger1_tip`, `right_finger5_tip`).
+
+Sites belong to `group="3"` and are hidden by default. In `mujoco.viewer`,
+open the control panel (Tab) and enable site rendering, then toggle Group 3
+under Rendering to see them.
+
+Read a site pose from Python:
+
+```python
+import mujoco
+
+model = mujoco.MjModel.from_xml_path("mjcf/left.xml")
+data = mujoco.MjData(model)
+mujoco.mj_forward(model, data)
+
+site_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_SITE, "left_finger1_tip")
+tip_pos = data.site_xpos[site_id]            # (3,) world-frame position
+tip_mat = data.site_xmat[site_id].reshape(3, 3)  # rotation matrix
+```
+
 #### Docking module
 
 The `docking/` directory ships a standalone docking link (URDF, MJCF, USD, STL)
