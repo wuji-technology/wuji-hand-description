@@ -7,7 +7,7 @@
     <mesh name="left_finger1_link2" content_type="model/stl" file="left_finger1_link2.STL" />
     <mesh name="left_finger1_link3" content_type="model/stl" file="left_finger1_link3.STL" />
     <mesh name="left_finger1_link4" content_type="model/stl" file="left_finger1_link4.STL" />
-    <mesh name="left_finger1_tip_link" content_type="model/stl" file="left_finger1_tip_link.STL" />
+    <mesh name="left_finger1_tip_link" content_type="model/stl" file="left_finger1_tip_link_xml.STL" />
     <mesh name="left_finger2_link1" content_type="model/stl" file="left_finger2_link1.STL" />
     <mesh name="left_finger2_link2" content_type="model/stl" file="left_finger2_link2.STL" />
     <mesh name="left_finger2_link3" content_type="model/stl" file="left_finger2_link3.STL" />
@@ -53,8 +53,8 @@
             <joint name="left_finger1_joint4" pos="0 0 0" axis="0 1 0" range="-0.457 1.5684" actuatorfrcrange="-0.1468 0.1468" />
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.6 0.8 0.9 1" mesh="left_finger1_link4" />
             <geom type="mesh" rgba="0.6 0.8 0.9 1" mesh="left_finger1_link4" contype="1" conaffinity="1" />
-            <geom pos="-0.00105 0.0002 0.0273" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.6 0.8 0.9 1" mesh="left_finger1_tip_link" />
-            <geom pos="-0.00105 0.0002 0.0273" type="mesh" rgba="0.6 0.8 0.9 1" mesh="left_finger1_tip_link" contype="1" conaffinity="1" />
+            <geom pos="-0.00105 0.0002 0.0313" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.6 0.8 0.9 1" mesh="left_finger1_tip_link" />
+            <geom pos="-0.00105 0.0002 0.0313" type="mesh" rgba="0.6 0.8 0.9 1" mesh="left_finger1_tip_link" contype="1" conaffinity="1" />
           </body>
         </body>
       </body>

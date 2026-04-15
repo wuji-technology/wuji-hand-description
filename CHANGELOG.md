@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Corrected thumb (`finger1`) tip mesh misalignment on both hands by supplying dedicated `left_finger1_tip_link_xml.STL` / `right_finger1_tip_link_xml.STL` variants referenced from the MJCF.
+- Adjusted the thumb tip geom Z-offset and added per-fingertip marker spheres for visual verification.
+
 ## [0.2.5] - 2026-04-10
 
 ### Added
