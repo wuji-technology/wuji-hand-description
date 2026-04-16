@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.04.16] - 2026-04-16
+
 ### Fixed
 
 - Unified left/right hand joint `<limit>` lower/upper bounds across `urdf/left.urdf`, `urdf/right.urdf`, `urdf/left-ros.urdf`, and `urdf/right-ros.urdf` by taking the averaged calibrated values, eliminating residual left/right asymmetry left over from the sysid calibration output.
@@ -98,7 +100,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added RViz configuration files for robot display.
 - Added ROS2 package build configuration.
 
-[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.5...HEAD
+[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v2026.04.16...HEAD
+[2026.04.16]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.5...v2026.04.16
 [0.2.5]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.2...v0.2.3
