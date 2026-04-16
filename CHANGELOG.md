@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Unified left/right hand joint `<limit>` lower/upper bounds across `urdf/left.urdf`, `urdf/right.urdf`, `urdf/left-ros.urdf`, and `urdf/right-ros.urdf` by taking the averaged calibrated values, eliminating residual left/right asymmetry left over from the sysid calibration output.
+
 ## [0.2.5] - 2026-04-10
 
 ### Added
