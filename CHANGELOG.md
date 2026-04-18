@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.04.16] - 2026-04-16
+
 ### Fixed
 
-- Unified left/right hand joint `<limit>` lower/upper bounds across `urdf/left.urdf`, `urdf/right.urdf`, `urdf/left-ros.urdf`, and `urdf/right-ros.urdf` by taking the averaged calibrated values, eliminating residual left/right asymmetry left over from the sysid calibration output.
+- Unified left/right hand joint <limit> bounds across all four URDF files using averaged calibrated values.
 
 ## [0.2.5] - 2026-04-10
 
@@ -19,20 +21,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Replaced all URDF, MJCF, and mesh files with sysid-calibrated outputs from the `urdf_cali` pipeline, resolving left-right hand inconsistencies in joint axes, inertial origins, and kinematic parameters.
-- Corrected joint axis directions produced by `fix_axis.py` to ensure consistent rotation conventions across left and right hands.
-- Updated per-joint actuator parameters (kp, kv, armature, forcerange) from system identification results.
-- Recalibrated joint limits (lower, upper, velocity, effort) from `joint_limit_stats.csv` and `torque_limit_urdf.csv`.
-- Updated inertial properties (mass, CoM, inertia tensor) from `pkg_model.csv`.
-- Regenerated ROS URDF variants (`left-ros.urdf`, `right-ros.urdf`) with `package://` mesh paths to match the calibrated non-ROS versions.
-- Synced STL mesh files from calibration pipeline output.
-- Removed spurious `<limit>` elements from the five `right_finger*_tip_fixed` joints in `urdf/right.urdf` and `urdf/right-ros.urdf`; fixed joints must not carry `<limit>`, and their presence was the sole source of the 25-line structural diff between the left and right URDFs.
-- Fixed wrong ROS package reference in `docking/urdf/docking-ros.urdf`: mesh paths now use `package://wuji_hand_description/docking/meshes/...` instead of the stale `package://wuji_description/robots/docking/meshes/...`, which would have failed to resolve after `colcon build`.
+- Replaced all URDF, MJCF, and mesh files with sysid-calibrated outputs, fixing left-right inconsistencies in joint axes, inertials, and kinematics.
+- Corrected joint axis directions for consistent rotation conventions.
+- Updated actuator parameters, joint limits, and inertial properties from sysid results.
+- Regenerated ROS URDF variants to match calibrated versions.
+- Removed spurious <limit> elements from fixed joints in right-hand URDFs.
+- Fixed wrong ROS package path in docking-ros.urdf.
 
 ### Changed
 
-- `CMakeLists.txt` now also installs the `mjcf/` and `usd/` directories so ROS consumers can load MuJoCo and Isaac Sim assets via `ament_index`.
-- README now documents how to preview the new docking module in MuJoCo and urdf-viz.
+- CMakeLists.txt now installs mjcf/ and usd/ directories for ROS consumers.
+- README documents docking module preview usage.
 
 ## [0.2.4] - 2026-03-23
 
@@ -98,7 +97,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added RViz configuration files for robot display.
 - Added ROS2 package build configuration.
 
-[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.5...HEAD
+[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v2026.04.16...HEAD
+[2026.04.16]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.5...v2026.04.16
 [0.2.5]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.2...v0.2.3
