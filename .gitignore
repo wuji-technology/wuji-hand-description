@@ -3,7 +3,7 @@
 build/
 install/
 log/
-
+scripts/
 __pycache__/
 
 *.tmp.urdf

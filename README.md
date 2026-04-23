@@ -72,6 +72,19 @@ ros2 launch wuji_hand_description display.launch.py hand:=right
 Load `usd/left/wujihand.usd` or `usd/right/wujihand.usd` directly in Isaac Sim.
 For a complete simulation example, see [isaaclab-sim](https://github.com/wuji-technology/isaaclab-sim).
 
+#### Adapters
+
+The `step/adapter/` directory provides two mounting adapters for connecting the Wuji Hand to a robotic arm flange:
+
+- **Direct adapter** — rigidly connects the hand to the arm.
+- **Impact-resistant adapter** — two-part design that separates under overload to protect the hand.
+
+Each option ships with a STEP model and an assembled PDF drawing. See [Adapter-Installation-Instructions.md](step/adapter/Adapter-Installation-Instructions.md) for step-by-step mounting guidance.
+
+#### Simplified structural models
+
+The `step/simplified-structural/` directory contains simplified STEP models of the left and right hand frames with temporary fingertips, intended for mechanical integration and mounting interface checks.
+
 #### Docking module
 
 The `docking/` directory ships a standalone docking link (URDF, MJCF, USD, STL)

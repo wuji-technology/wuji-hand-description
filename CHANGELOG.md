@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added adapter STEP files, assembled PDF drawings, and installation instructions under `step/adapter/` for the direct adapter and the impact-resistant adapter.
+- Added simplified structural STEP files for the left and right hand frames (with temporary fingertips) under `step/simplified-structural/`.
+
+### Removed
+
+- Removed the legacy top-level `step/left_hand.STEP` and `step/right_hand.STEP` files in favor of the new `step/adapter/` and `step/simplified-structural/` layout.
+
 ## [2026.04.16] - 2026-04-16
 
 ### Fixed
