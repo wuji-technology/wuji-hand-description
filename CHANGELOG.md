@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed the legacy top-level `step/left_hand.STEP` and `step/right_hand.STEP` files in favor of the new `step/adapter/` and `step/simplified-structural/` layout.
+### Fixed
+
+- Fixed thumb mesh vertices on both hands (`finger1_link1`, `finger1_link2`, `finger1_tip_link`); URDF, MJCF, and USD updated accordingly to match the new thumb geometry.
 
 ## [2026.04.16] - 2026-04-16
 
