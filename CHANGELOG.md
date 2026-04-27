@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.04.27] - 2026-04-27
+
 ### Added
 
 - Added adapter STEP files, assembled PDF drawings, and installation instructions under `step/adapter/` for the direct adapter and the impact-resistant adapter.
@@ -109,7 +111,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added RViz configuration files for robot display.
 - Added ROS2 package build configuration.
 
-[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v2026.04.16...HEAD
+[Unreleased]: https://github.com/wuji-technology/wuji-hand-description/compare/v2026.04.27...HEAD
+[2026.04.27]: https://github.com/wuji-technology/wuji-hand-description/compare/v2026.04.16...v2026.04.27
 [2026.04.16]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.5...v2026.04.16
 [0.2.5]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/wuji-technology/wuji-hand-description/compare/v0.2.3...v0.2.4
